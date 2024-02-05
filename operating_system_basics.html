@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+      background-color: rgb(41, 40, 40);
+      color: aliceblue;
+      font-size:x-large;
+      line-height: 1.5;
+    }
+    h1{
+      background-color: rgb(4, 4, 109);
+    }
+    /* pre{
+      max-width: 1400px;
+      white-space: pre-wrap;
+    } */
+  </style>
+  <title>Operating System</title>
+</head>
+<body>
+  <h1>Operating System</h1>
+  <pre>
+    * operating system is an interface between user and computer hardware.
+      user --> application program --> operating system (kernel) --> hardware (c.p.u.) , (r.a.m.) , (i/o) , etc.
+    * operating system is a system software.
+    * goals of operating system.
+      1. primary = convinience (easy to use). eg. windows
+      2. secondary = efficient (fast processing). 
+  </pre><hr>
+
+  <h2>How operating system works ?</h2>
+  <pre> 
+    * shell = interface between user command and kernel which takes input from user and send instruction to kernel.
+    * kernel = kernel is the heart of operating system. it access the hardware through user's input .
+  </pre><hr>
+
+  <h2>Functions of Operating System</h2>
+  <pre>
+    1. resource management
+       --> hardware
+       --> software
+    2. memory management
+       --> R.A.M. 
+    3. i/o management
+       --> operating system also manages input and output devices.
+    4. storage management
+       --> hard disk
+    5. process management
+       --> schedule process to C.P.U. 
+    6. security & protection
+       
+    NOTE :- memory means R.A.M. and storage means hard disk.
+  </pre><hr>
+
+  <h3>What is System Call ?</h3>
+  <pre>
+    * request made by user program to operating system in order to get any kind of service.
+    * user gives an input through any program then the input convert into a sytem calls then it can
+      interacts and access with the computer hardware.
+    * ex :-
+    main()
+    {
+      int x;
+      print f("hello");
+    }
+    here printf internally called write() system calls in order to communicate monitor.
+    * in windows there are approx 700 system calls. 
+    <!-- * operating system basiscally works on two mode. 
+      1. user mode 2. kernel mode  12.00 -->
+  </pre><hr>
+
+  <h2>Types of Operating System</h2>
+  <pre>
+    1. batch operating system
+       * In batch os, one job or task runs or execute at a time in many jobs or tasks present in R.A.M.
+         with operating system.
+       * Then that running job go to the C.P.U. for execution and spend its C.P.U. time.
+       * Every Job have mainly two time. 
+         1. C.P.U. time
+         2. I/O time
+       * If that running job go to the C.P.U. for execution and if that job demand or need for I/O
+         then it goes to the I/O (input-output devices) . 
+       * The C.P.U. remains idle or free at that time when job go for the I/O. 
+       * If the first task or job is fully completed then the other job or task is scheduled.
+       * So, basically batch os gives
+         --> less throughput (throughput = number of job completed per unit time).
+         --> increase C.P.U. idleness.
+
+     2. multiprogramming operating system
+        * In batch os, one job or task runs or execute at a time in many jobs or tasks present in R.A.M.
+          with operating system.
+        * Then that running job go to the C.P.U. for execution and spend its C.P.U. time.
+        * If that running job go to the C.P.U. for execution and if that job demand or need for I/O
+          then it goes to the I/O (input-output devices) . 
+        * While the first job is going for the I/O C.P.U. time doesn't became idle or free.
+        * In multiprogramming operating system, another job or task execute to the C.P.U. 
+          when the first job is going for the I/O.
+                  
+     3. multitasking operating system
+        * extension(evolved version ) of multiprogramming operating system.
+        * In multitasking operating system, jobs or tasks execuded in time sharing mode. 
+
+     4. multiprocessor operating system (parallel system)
+        * more than one processor or C.P.U. is present, so many jobs can be executed at a single time,
+          thats why it is also known as parallel system.
+        * it is a fault tolerant system, if one C.P.U. fails then other C.P.U. continues the work.
+
+     5. real time operating system
+        * This system is strictly time-bound.
+        * It is of two type 
+          1. Hard real time system. eg. missile system, satellite system.
+          2. Soft real time system. eg. banking system.
+  </pre><hr>
+
+  
+</body>
+</html>
